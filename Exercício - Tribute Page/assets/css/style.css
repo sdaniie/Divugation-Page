@@ -1,0 +1,371 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+   --white-color: #F0E9E1;
+   --black-color: #0D1416;
+}
+
+ body {
+    font-family: 'Roboto Slab', serif;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+
+ .container {
+    display: flex;
+    width: 70vw;
+ }
+
+ .column {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .container_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin: 50px 0px;
+ }
+
+ .container_top #artistic_name {
+    font-size: 70px;
+ }
+
+ .container_top #age {
+    font-size: 20px;
+    font-weight:300;
+ }
+
+ .container_bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+ }
+
+.music_name {
+   margin-bottom: 60px;
+   font-size: 18px;
+}
+
+.play_button {
+   width: 250px;
+   height: 80px;
+   background-color: #F0E9E1;
+   border-radius: 45px;
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   box-shadow:  34px 34px 50px #000000,
+               -34px -34px 50px #1d1d1d,
+               inset 5px 5px 20px #ffffff,
+               inset -5px -5px 20px #b6a696;
+ }
+
+.play_icon, .next_music_left, .next_music_right {
+   font-size: 20px;
+   color: #0D1416;
+}
+
+.play_icon {
+   font-size: 25px;
+}
+
+.next_music_left {
+   margin-right: 5px;
+}
+
+.div_button {
+   width: 50px;
+   height: 50px;
+   border-radius: 35px;
+   box-shadow: 5px 5px 10px #9b9690;
+   cursor: pointer;
+   transition: all .3s ease-out;
+}
+
+.play_button_center {
+   width: 60px;
+   height: 60px;
+   border-radius: 35px;
+   box-shadow: 5px 5px 10px #9b9690;
+}
+
+.div_button:active {
+   box-shadow: 5px 5px 10px #9b9690;
+   box-shadow: inset 3px 3px 10px #9b9690;
+}
+
+.clicked {
+   box-shadow: 5px 5px 10px #9b9690;
+   box-shadow: inset 3px 3px 10px #9b9690;
+}
+
+ #banner_sza {
+    background-image: url('../images/original.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100vw;
+ }
+
+ #title_biography {
+   margin-top: 60px;
+   margin-bottom: 40px;
+   font-size: 45px;
+ }
+
+ .byography_text {
+   line-height: 40px;
+   margin-bottom: 60px;
+   font-size: 18px;
+ }
+
+
+ #geral_information {
+   background-color: var(--white-color);
+   width: 100%;
+   height: auto;
+   color: var(--black-color);
+   display: flex;
+   justify-content: center;
+ }
+
+#div_table * {
+   color: var(--black-color);
+   margin: 60px 0px;
+}
+
+table {
+   line-height: 60px;
+   width: 100%;
+   font-size: 18px;
+}
+
+.coluna1 {
+   font-weight: bold;
+}
+
+#table_title {
+   font-size: 45px;
+   padding-bottom: 40px;
+}
+
+
+#links {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-top: 60px; 
+   padding-bottom: 10px; 
+   background-color: #0D1416;
+   width: 100%;
+}
+
+#footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 50px 0px;
+}
+
+#footer .container h1 {
+   font-weight: normal;
+   font-size: 15px;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+
+span {
+   margin-left: 10px;
+   font-size: 22px;
+}
+
+.button {
+   width: 70px;
+   height: 70px;
+   line-height: 70px;
+   background-color: #F0E9E1;
+   border-radius: 70px;
+   text-align: center;
+   font-size: 30px;
+   margin-right: 40px;
+   transition: all .3s ease-out;
+   overflow: hidden;
+   box-shadow: 2px 2px 15px black;
+}
+
+a {
+   text-decoration: none;
+   color:#0D1416;
+}
+
+
+.button:hover{
+   width: 250px;
+   cursor: pointer;
+}
+
+.insta:hover {
+   background-color: #DD2a7B;
+   color:#F0E9E1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.twitter:hover {
+   background-color: #00ACEE;
+   color:#F0E9E1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.spotify:hover {
+   background-color: #1DB954;
+   color:#F0E9E1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.facebook:hover {
+   background-color: #3b5998;
+   color:#F0E9E1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.facebook{
+   margin-right: 0px;
+}
+
+@media (max-width: 745px) {
+   .wrapper {
+      flex-direction: column;
+   } 
+
+   a {
+      margin-bottom: 30px;
+   }
+
+   .button {
+      margin-right: 0px;
+   }
+}
+
+@media (max-width: 600px) {
+   #table_title, #title_biography{
+      font-size: 30px;
+   }
+
+   .byography_text {
+      font-size: 14px;
+      line-height: 30px;
+   }
+
+   table {
+      font-size: 14px;
+      line-height: 50px;
+   }
+
+   #footer .container h1 {
+      font-weight: normal;
+      font-size: 12px;
+   }
+}
+
+@media (max-width: 600px) {
+   #table_title, #title_biography{
+      font-size: 30px;
+   }
+
+   .byography_text {
+      font-size: 14px;
+      line-height: 30px;
+   }
+
+   table {
+      font-size: 14px;
+      line-height: 50px;
+   }
+
+   .play_button {
+      width: 200px;
+      box-shadow:  20px 20px 40px #000000,
+               -20px -20px 40px #1d1d1d,
+               inset 5px 5px 20px #ffffff,
+               inset -5px -5px 20px #b6a696;
+
+   }
+}
+
+@media (max-width: 425px) {
+   .play_button {
+         width: 190px;
+         box-shadow:  20px 20px 30px #000000,
+                  -20px -20px 30px #1d1d1d,
+                  inset 5px 5px 20px #ffffff,
+                  inset -5px -5px 20px #b6a696;
+   
+   }
+}
+
+
+@media (max-width: 375px) {
+   #table_title, #title_biography{
+      font-size: 20px;
+   }
+
+   .byography_text {
+      font-size: 12px;
+      line-height: 25px;
+   }
+
+   table {
+      font-size: 12px;
+      line-height: 40px;
+   }
+
+   #footer .container h1 {
+      font-weight: normal;
+      font-size: 11px;
+   }
+
+   .play_button {
+      width: 190px;
+      box-shadow:  10px 10px 15px #000000,
+               -10px -10px 15px #1d1d1d,
+               inset 5px 5px 20px #ffffff,
+               inset -5px -5px 20px #b6a696;
+}
+
+}
+

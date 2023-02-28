@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UFT-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+        <link rel="icon" type="image/png" href="https://diretoaoponto-tech.com.br/icon-target.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/38a1461731.js" crossorigin="anonymous"></script>
+        <title>SZA</title>
+    </head>
+    <body>
+        <head id="head">
+            <div class="container column center">
+                <div class="container_top">
+                    <h2 id="artistic_name">SZA</h2>
+                    <h2 id="age">33 years</h2>
+                </div>
+                <div class="play_button center">
+                    <audio class="audio" src=""></audio>
+                    <div class="play_button_left center div_button"">
+                        <i class="next_music_left fa-solid fa-angles-left"></i>
+                    </div>
+                    <div class="play_button_center center div_button">
+                        <i class="play_icon fa-solid fa-play"></i>
+                    </div>
+                    <div class="play_button_right center div_button">
+                        <i class="next_music_right fa-solid fa-angles-right"></i>
+                    </div>
+                </div>
+                <div class="music_name">Music Name</div>
+            </div>
+        </head>
+        <section id="banner_sza">
+        </section>
+        <section id="biography">
+            <div class="container column">
+                <h1 id="title_biography">Biografia</h1>
+                <p class="byography_text">SZA é uma cantora de neo-soul, cuja música é sonoramente descrita como R&B alternativo, com elemento de soul, hip-hop, R&B minimalista, cloud rap, witch house e chillwave. As letras de Rowe são descritas como "desenroladas", que giram em torno de temas de sexualidade, nostalgia e abandono. SZA cita uma variedade de artistas como suas influências, incluindo Meelah e Jamiroquai. SZA também tem influências de artistas que não são inclusos no mundo musical, que atuam como ginastas, patinadores, pintores e cineastas, como Spike Lee.</p>
+            </div>
+        </section>
+        <section id="geral_information">
+            <div class="container center">
+                    <div id="div_table">
+                            <table>
+                                    <thead>
+                                        <tr>
+                                            <th align="center" id="table_title" colspan="2">Informações Gerais</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="coluna1" width="230px">Nome completo</td>
+                                            <td>Solána Imani Rowe</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="coluna1" width="230px">Nascimento</td>
+                                            <td>Solána Imani Rowe</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="coluna1" width="230px">Local de nascimento</td>
+                                            <td>St. Louis, Missouri - Estados Unidos</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="coluna1" width="230px">Gênero(s)</td>
+                                            <td>R&B alternativo, neo soul</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="coluna1" width="230px">Ocupação(ões)</td>
+                                            <td>Cantora,compositora</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="coluna1" width="230px">Período em atividade</td>
+                                            <td>2011— presente</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="coluna1" width="230px">Gravadora(s)</td>
+                                            <td>Top Dawg Entertainment - RCA Records</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="coluna1" width="230px">Página Oficial</td>
+                                            <td><a id="a" href="https://www.szactrl.com" target="_blank">SZA</a></td>
+                                        </tr>
+                                    </tbody>
+                            </table>
+                    </div>
+            </div>
+        </section>
+        <section id="links">
+            <div class="container center">
+                <div class="wrapper container">
+                        <a href="https://www.instagram.com/sza/" target="_blank">
+                            <div class="button insta">
+                                <div class="icon"><i class="fab fa-instagram"></i></div>
+                                <span class="brand_name">Instagram</span>
+                            </div>
+                        </a>
+                    
+                        <a href="https://twitter.com/sza" target="_blank">
+                            <div class="button twitter">
+                                <div class="icon"><i class="fab fa-twitter"></i></div>
+                                <span class="brand_name">Twitter</span>
+                            </div>
+                        </a>
+                    
+                        <a href="https://open.spotify.com/artist/7tYKF4w9nC0nq9CsPZTHyP" target="_blank">
+                            <div class="button spotify">
+                                <div class="icon"><i class="fab fa-spotify"></i></div>
+                                <span class="brand_name">Spotify</span>
+                            </div>
+                        </a>
+                        
+                        <a href="" target="_blank">
+                            <div class="button facebook">
+                                <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                                <span class="brand_name">Facebook</span>
+                            </div>
+                        </a>
+                </div>
+            </div>
+        </section> 
+        <footer id="footer">
+            <div class="container center">
+                <h1>Made by <em>Danielle Soares</em></h1>
+            </div>
+        </footer>
+        <script>
+            const title = document.querySelector ('.music_name');
+            const prev = document.querySelector ('.play_button_left');
+            const playPause = document.querySelector ('.play_button_center');
+            const next = document.querySelector ('.play_button_right');
+            const audio = document.querySelector ('.audio');
+
+            const songList = [
+                {
+                    path:"Low.mp3",
+                    songName:"Low",
+                },
+                {
+                    path:"HitDifferent.mp3",
+                    songName:"Hit Different",
+                }
+            ]
+
+            let song_Playing = false;
+
+            function playSong (){
+                song_Playing = true;
+                audio.play();
+                playPause.classList.add('.clicked')
+                playPause.innerHTML ='<i class="play_icon fa-solid fa-pause"></i>';
+            }
+
+            function pauseSong (){
+                song_Playing = false;
+                audio.pause();
+                playPause.classList.remove('.clicked')
+                playPause.innerHTML ='<i class="play_icon fa-solid fa-play"></i>';
+            }
+
+            playPause.addEventListener('click', () => (song_Playing ? pauseSong() : playSong()));
+
+            function loadSong(songList) {
+                title.textContent = songList.songName;
+                audio.src = songList.path;
+            }
+
+            let i = 0;
+
+            loadSong (songList[i])
+
+            function prevSong () {
+                i--;
+                if (i < 0) {
+                    i = songList.length - 1;
+                }
+                loadSong(songList[i]);
+                playSong();
+            }
+
+            prev.addEventListener('click', prevSong());
+
+            function nextSong () {
+                i++;
+                if (i > songList.length - 1) {
+                    i = songList.length - 1;
+                }
+
+                loadSong(songList[i]);
+                playSong();
+            }
+
+            next.addEventListener('click', nextSong());
+
+        </script>
+    </body>
+</html>
